@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    padding-top: 50px;
+    background-color:#805cd2;
+}
+.box{
+    min-height:25rem;
+    width:25rem;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+    background-color:rgba(235, 220, 255, 0.732);
+    border-radius:25px;
+    box-shadow:0 4px 8px black;
+    transition: 1s;
+}
+.box:hover{
+    box-shadow:0 8px 16px rgb(62, 123, 123);
+}
+#head{
+   margin:0;
+   color:white;
+   font-size:30px;
+}
+.headbox{
+    width:86%;
+    padding:10px;
+    margin-top:16px;
+    margin-bottom:10px;;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #9d15becc;
+}
+.addbox{
+    display:flex;
+    align-items: flex-start;
+}
+#inputbox{
+    border:none;
+    border-radius:10px;
+    width:15rem;  
+    height:30px;
+    padding:5px;
+    padding-left:20px;
+    margin-right:8px;
+    margin-top:18px;
+    font-size:16px;
+}
+#addtodo{
+    border:none;
+    margin-top:18px;
+    height:39px;
+    border-radius:10px;
+    padding:9px;
+    font-size:15px;
+    background-color: #9d15becc;
+    color:white;
+    font-weight:600;
+}
+.displaybox{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+#list{
+    padding:0;
+    margin:0;
+}
+.listitem{
+    background-color: rgba(255, 255, 255, 0.782);
+    width:21rem; 
+    height:30px;
+    display:flex;
+    justify-content: space-between;
+    margin:20px 5px;
+    padding:5px;
+    padding-left:10px;
+    border-radius:10px;
+    font-size: 22px;
+}
+.deltodo{
+    background-color:#9d15becc ;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:14px;
+    font-weight:400;
+}
