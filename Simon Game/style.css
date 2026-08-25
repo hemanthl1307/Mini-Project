@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+     background-color: rgb(252, 238, 221); 
+    text-align:center;
+}
+.head{
+    margin-top:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color:rgb(22, 14, 174);
+}
+h2{
+    padding:10px;
+}
+.btn{
+    height:200px;
+    width:200px;
+    border:5px solid black;
+    border-radius:25px;
+    margin:20px;
+}
+.box-container{
+    display:flex;
+    justify-content: center;
+    margin-top:8px;
+    flex-wrap: wrap;
+}
+.green{
+    background-color: #00A74A;
+}
+.yellow{
+    background-color:#e3f51e;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: #094A8F;
+}
+.gameflash{
+    background-color: white;
+}
+.userflash{
+    background-color:rgb(255, 173, 225);
+}
+.h3{
+    text-align:center;
+    height:30px;
+    width:200px;
+    background-color: rgb(240, 255, 128);
+    color:black;
+    border-radius:10px;
+    padding:2px;
+    margin-top:5px;
+    border:1px solid goldenrod;
+}
