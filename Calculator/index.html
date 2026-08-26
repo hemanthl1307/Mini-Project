@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewbuttonort" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="disbox">
+            <input type="text" id="display">
+        </div>
+        <div class="buttons">
+                <div class="row-1">
+                <button class=" btn unique">AC</button>
+                <button class=" btn unique" data-value="%">%</button>
+                <button class=" btn unique" data-value="DEL"><i class="fa-regular fa-rectangle-xmark" style="font-size:15px"></i></button>
+                <button class=" btn unique" data-value="+"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="row-2">
+                <button class=" btn number">7</button>
+                <button class=" btn number">8</button>
+                <button class=" btn number">9</button>
+                <button class=" btn unique" data-value="-"><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <div class="row-3">
+                <button class=" btn number">4</button>
+                <button class=" btn number">5</button>
+                <button class=" btn number">6</button>
+                <button class=" btn unique" data-value="*"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="row-4">
+                <button class=" btn number">1</button>
+                <button class=" btn number">2</button>
+                <button class=" btn number">3</button>
+                <button class=" btn unique" data-value="/"><i class="fa-solid fa-divide"></i></button>
+                </div>
+                <div class="row-5">
+                <button class=" btn number">00</button>
+                <button class=" btn number">0</button>
+                <button class=" btn number" id="dot">.</button>
+                <button class="btn unique" id="equal" data-value="="><i class="fa-solid fa-equals"></i></button>
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
