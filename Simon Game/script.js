@@ -5,16 +5,15 @@ let btns=["green","yellow","red","blue"];
 let started=false;
 let level=0;
 let h2=document.querySelector("h2");
-document.addEventListener("keypress",function()
-{
-    if(started==false)
-    {
-        console.log("game started!");
-        started=true;
+document.addEventListener("keypress",startGame)
+let startBtn = document.querySelector("#startBtn");
+startBtn.addEventListener("click", startGame);
+function startGame() {
+    if (started == false) {
+        started = true;
+        Levelup();
     }
-    Levelup();
-
-})
+}
 function gameflash(btn)
 {
     btn.classList.add("gameflash");
