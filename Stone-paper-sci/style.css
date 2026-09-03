@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    background-color: #ffbd07;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 70px;
+}
+
+.btn {
+    height: 120px;
+    width: 120px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding:5px;
+    background-color: aquamarine;
+}
+
+.btn i {
+    font-size: 60px;
+}
+#stone {
+    background-color: #fa4129;
+}
+
+#paper {
+    background-color: #4ad907;
+}
+
+#scissor {
+    background-color:rgb(7, 173, 198);
+}
+.score-box {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.score-box{
+    height:120px;
+    width:450px;
+    border:1px solid white;
+    background-color: black;
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+    align-content: space-between;
+}
+.score{
+    height:80px;
+    width:100px;
+    background-color:white;
+    margin:20px;
+}
+@media (max-width: 600px) {
+
+    .button-box {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        height: 90px;
+        width: 90px;
+    }
+
+    .btn i {
+        font-size: 40px;
+    }
+}
