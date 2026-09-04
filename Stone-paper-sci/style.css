@@ -18,11 +18,6 @@ body {
 h1 {
     color: black;
 }
-
-h2 {
-    margin-top: 10px;
-}
-
 .button-box {
     display: flex;
     justify-content: center;
@@ -32,8 +27,8 @@ h2 {
 }
 
 .btn {
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
     border: none;
     border-radius: 50%;
     display: flex;
@@ -58,26 +53,44 @@ h2 {
 #scissor {
     background-color:rgb(7, 173, 198);
 }
-.score-box {
-    display: flex;
-    gap: 50px;
-    margin-top: 50px;
-}
 .score-box{
-    height:120px;
-    width:450px;
-    border:1px solid white;
-    background-color: black;
-    margin-top:100px;
+    height:100px;
+    width:310px;
+    border:2px solid black;
+    border-radius: 15px;
+    margin-top:60px;
     display:flex;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-around;
+    background-color: #f5ff69;
 }
-.score{
-    height:80px;
-    width:100px;
-    background-color:white;
-    margin:20px;
+.box{
+    font-size:22px;
+    margin: 10px;
+}
+.info{
+    margin-top:40px;
+    height:82px;
+    width:320px;
+    background-color: black;
+    border-radius: 15px;
+    color:white;
+    font-size: 30px;
+    padding: 8px;
+    border:1px solid #f5ff69;
+}
+.numeric{
+    font-size: 45px;
+}
+#restart {
+    margin:30px;
+    padding: 10px 20px;
+    background-color: #f5ff69;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border:1px solid black;
 }
 @media (max-width: 600px) {
 
@@ -93,5 +106,8 @@ h2 {
 
     .btn i {
         font-size: 40px;
+    }
+    .score-box{
+        flex-wrap: wrap;
     }
 }

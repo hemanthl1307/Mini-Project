@@ -9,18 +9,23 @@
 </head>
 <body>
     <h1>Stone-Paper-Scissor</h1>
-    <h2>Level-0</h2>
     <div class="button-box">
     <button class="btn btn1" id="stone"><i class="fa-solid fa-hand-fist" ></i></button>
     <button class="btn btn2" id="paper"><i class="fa-solid fa-hand"></i></button>
     <button class="btn btn3" id="scissor"><i class="fa-solid fa-hand-peace"></i></button>
     </div>
     <div class="score-box">
-    <div class="score user">0 You </div>
-    <div class="score computer">0 Computer</div>
+    <div class="box user">
+    <div class="score numeric userscore">0</div>
+    <div class="score">You </div>
     </div>
-
-
+    <div class="box computer">
+    <div class="score numeric compscore">0</div>
+    <div class="score">Computer</div>
+    </div>
+    </div>
+    <div class="info">play your Move!</div>
+    <button id="restart">Restart Game</button>
     <script src="script.js"></script>
 </body>
 </html>
