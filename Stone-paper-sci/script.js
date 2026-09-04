@@ -39,11 +39,11 @@ function gamescore(userval,val)
     else if((userval=="scissor" && val=="stone") || (userval=="stone" && val=="paper") || (userval=="paper" && val=="scissor"))
     {
         compscore++;
-        infodis.innerHTML = `Computer wins! ${val} beats ${userval}`;
+        infodis.innerHTML = `Computer wins! <br> ${val} beats ${userval}`;
         compscoreval.innerText=compscore;
         console.log("Computer Score:", compscore);
     }else{
-        infodis.innerText = "Draw! Both chose " + userval;
+        infodis.innerHTML = `Draw! Both chose ${userval}`;
     }
 }
 let restartbtn = document.querySelector("#restart");
