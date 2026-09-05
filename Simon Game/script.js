@@ -91,9 +91,11 @@ function highscoredis()
 function alertuser()
 {
     let doc=document.querySelector("body");
+    doc.style.backgroundImage="none";
     doc.style.backgroundColor="red";
     setTimeout(()=>{
-        doc.style.backgroundColor="rgb(252, 238, 221)";
+        doc.style.backgroundImage="";
+        doc.style.backgroundColor="";
     },300);
 }
 function restart(){
