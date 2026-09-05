@@ -22,13 +22,13 @@ header {
     margin-bottom: 55px;
 }
 .mini-title {
-    font-size:30px;
+    font-size:32px;
     letter-spacing: 4px;
     color: #38bdf8;
     margin-bottom: 10px;
 }
-h1 {
-    font-size: 64px;
+#mainheading{
+    font-size:46px;
     font-weight: 700;
     letter-spacing: -2px;
 }
