@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #1a1a1a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: 500;
+    color: #12c8f0;
+    text-shadow: 0 0 12px rgba(18, 200, 240, 0.15);
+}
+
+.turn {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ff7d86;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.game {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 0;
+    padding: 8px;
+    background: #242424;
+    border-radius: 7px;
+    box-shadow:
+        0 0 8px rgba(0, 255, 255, 0.08),
+        0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    border: 1px solid #303030;
+    border-radius: 0;
+    background: #272727;
+    font-size: 45px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+}
+
+.box:nth-child(odd) {
+    color: #ff6d75;
+}
+
+.box:nth-child(even) {
+    color: #5ee0d5;
+}
+
+.box:hover {
+    background: #303030;
+}
+
+.box:active {
+    transform: scale(0.96);
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 45px;
+}
+
+.new-game {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background: #10c8ed;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.new-game:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(16, 200, 237, 0.35);
+}
+
+.new-game:active {
+    transform: scale(0.96);
+}
+
+.reset {
+    width: 150px;
+    height: 40px;
+    margin-top: 0;
+    border: 2px solid #10c8ed;
+    border-radius: 25px;
+    background: transparent;
+    color: #10c8ed;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.reset:hover {
+    background: #10c8ed;
+    color: #111;
+    box-shadow: 0 0 15px rgba(16, 200, 237, 0.35);
+}
+
+.reset:active {
+    transform: scale(0.96);
+}
+
+.score-card {
+    width: 395px;
+    min-height: 85px;
+    margin-top: 25px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #292929;
+    border-radius: 7px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.score-player{
+    text-align: center;
+    min-width: 80px;
+}
+
+.score-player p{
+    margin-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #aaa;
+}
+
+.score-player span {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.score-player:first-child span {
+    color: #ff6d75;
+}
+.score-player:last-child span {
+    color: #5ee0d5;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        margin-top: 35px;
+        font-size: 32px;
+    }
+
+    .turn {
+        margin-top: 18px;
+        font-size: 17px;
+    }
+
+    .container {
+        margin-top: 25px;
+    }
+
+    .game {
+        width: 85vw;
+        height: 85vw;
+        max-width: 360px;
+        max-height: 360px;
+    }
+
+    .box {
+        font-size: 12vw;
+    }
+
+    .game-buttons {
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .new-game {
+        width: 115px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .reset {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .score-card {
+        width: 85vw;
+        max-width: 395px;
+        margin-top: 20px;
+        padding: 14px 15px;
+    }
+
+    .score-player p,
+    .score-ties p {
+        font-size: 10px;
+    }
+
+    .score-player span,
+    .score-ties span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    h1 {
+        margin-top: 25px;
+        font-size: 28px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .game {
+        width: 90vw;
+        height: 90vw;
+        padding: 5px;
+    }
+
+    .box {
+        font-size: 18vw;
+    }
+
+    .game-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .new-game,
+    .reset {
+        width: 150px;
+    }
+
+    .score-card {
+        width: 90vw;
+    }
+}
