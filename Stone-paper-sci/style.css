@@ -275,10 +275,15 @@ h1 {
 
 @media (max-width: 600px) {
 
+    h1{
+        margin-bottom:4px;
+        font-size: 30px;
+        margin-top:0px;
+    }
     .button-box {
         gap: 25px;
         flex-wrap: wrap;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .btn {
         height: 120px;
